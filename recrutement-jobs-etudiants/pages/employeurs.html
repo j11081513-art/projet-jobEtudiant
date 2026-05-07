@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Espace Employeurs — JobEtudiant</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    .emp-hero { padding: 140px 0 80px; text-align: center; }
+    .emp-hero h1 { font-family: var(--font-display); font-size: 3rem; font-weight: 800; letter-spacing: -2px; color: #fff; margin-bottom: 16px; }
+    .emp-hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 500px; margin: 0 auto 40px; line-height: 1.8; }
+    .emp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 80px 0; }
+    .emp-feature { background: var(--dark2); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 32px 28px; }
+    .emp-feature .icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .emp-feature h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 10px; }
+    .emp-feature p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
+    .emp-cta { text-align: center; padding: 80px 0; background: var(--dark2); border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); }
+    .emp-cta h2 { font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; color: #fff; margin-bottom: 12px; }
+    .emp-cta p { color: var(--text-muted); margin-bottom: 32px; }
+    @media (max-width: 768px) { .emp-grid { grid-template-columns: 1fr; } .emp-hero h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Job<span>Etudiant</span></a>
+      <ul class="nav-links">
+        <li><a href="offres.html">Offres</a></li>
+        <li><a href="employeurs.html" style="color:#fff">Employeurs</a></li>
+        <li><a href="inscription.html" class="btn-nav">Rejoindre</a></li>
+      </ul>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </nav>
+
+  <section class="emp-hero">
+    <div class="container">
+      <span class="hero-badge" style="margin-bottom:24px;display:inline-flex;">🏢 Espace Employeur</span>
+      <h1>Trouvez vos<br/><em style="background:linear-gradient(135deg,#4d4dff,#ff6b35);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal;">talents étudiants</em></h1>
+      <p>Accédez à une base de candidats étudiants motivés, disponibles et prêts à s'investir dans votre entreprise.</p>
+      <a href="inscription.html" class="btn-primary">Publier une offre gratuitement</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="emp-grid">
+        <div class="emp-feature">
+          <div class="icon">🎯</div>
+          <h3>Candidats qualifiés</h3>
+          <p>Accédez à des profils d'étudiants filtrés par compétences, disponibilités et localisation. Plus de tri manuel.</p>
+        </div>
+        <div class="emp-feature">
+          <div class="icon">⚡</div>
+          <h3>Publication rapide</h3>
+          <p>Publiez votre offre en moins de 5 minutes. Elle sera visible immédiatement par des milliers d'étudiants.</p>
+        </div>
+        <div class="emp-feature">
+          <div class="icon">💬</div>
+          <h3>Messagerie directe</h3>
+          <p>Communiquez directement avec les candidats via notre messagerie intégrée. Pas de mail perdu.</p>
+        </div>
+        <div class="emp-feature">
+          <div class="icon">📊</div>
+          <h3>Tableau de bord</h3>
+          <p>Suivez vos offres, candidatures reçues et échanges depuis un espace clair et centralisé.</p>
+        </div>
+        <div class="emp-feature">
+          <div class="icon">🆓</div>
+          <h3>100% gratuit</h3>
+          <p>La publication d'offres et la mise en relation sont entièrement gratuites pour les employeurs partenaires.</p>
+        </div>
+        <div class="emp-feature">
+          <div class="icon">🔄</div>
+          <h3>Flexibilité maximale</h3>
+          <p>Publiez des offres ponctuelles, régulières ou saisonnières selon vos besoins RH du moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="emp-cta">
+    <div class="container">
+      <h2>Prêt à recruter ?</h2>
+      <p>Rejoignez 350+ employeurs qui font confiance à JobEtudiant</p>
+      <a href="inscription.html" class="btn-primary">Créer mon espace employeur →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2025 JobEtudiant — Projet ESGIS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

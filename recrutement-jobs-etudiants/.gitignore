@@ -1,0 +1,16 @@
+# Système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Node (si utilisé plus tard)
+node_modules/
+npm-debug.log

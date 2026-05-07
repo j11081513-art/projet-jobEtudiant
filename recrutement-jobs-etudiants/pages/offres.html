@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offres d'emploi — JobEtudiant</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Job<span>Etudiant</span></a>
+      <ul class="nav-links">
+        <li><a href="offres.html" style="color:#fff">Offres</a></li>
+        <li><a href="employeurs.html">Employeurs</a></li>
+        <li><a href="inscription.html" class="btn-nav">Rejoindre</a></li>
+      </ul>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Offres d'emploi</h1>
+      <p>1 200+ opportunités adaptées à votre emploi du temps étudiant</p>
+    </div>
+  </section>
+
+  <div class="offres-layout">
+
+    <!-- FILTRES -->
+    <aside class="filter-panel">
+      <h3>🔎 Filtrer</h3>
+
+      <div class="filter-group">
+        <label>Secteur</label>
+        <select id="filtreSecteur">
+          <option value="">Tous les secteurs</option>
+          <option value="commerce">Commerce</option>
+          <option value="tech">Tech & Web</option>
+          <option value="restauration">Restauration</option>
+          <option value="cours">Cours particuliers</option>
+          <option value="livraison">Livraison</option>
+          <option value="admin">Administration</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Salaire minimum (€/h)</label>
+        <input type="number" placeholder="ex: 12" min="0" max="30" />
+      </div>
+
+      <div class="filter-group">
+        <label>Ville</label>
+        <input type="text" placeholder="ex: Paris, Lyon..." />
+      </div>
+
+      <div class="filter-group">
+        <label>Type de contrat</label>
+        <select>
+          <option value="">Tous types</option>
+          <option>CDI étudiant</option>
+          <option>CDD</option>
+          <option>Alternance</option>
+          <option>Mission ponctuelle</option>
+          <option>Freelance</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Disponibilité</label>
+        <select>
+          <option value="">Toutes</option>
+          <option>Week-ends uniquement</option>
+          <option>Soirs de semaine</option>
+          <option>Temps partiel régulier</option>
+          <option>Vacances scolaires</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- OFFRES -->
+    <div class="offres-grid">
+
+      <div class="offre-card" data-secteur="commerce">
+        <div class="offre-logo">🏪</div>
+        <div class="offre-info">
+          <h3>Caissier / Caissière week-end</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Carrefour Market — Paris 15e</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Commerce</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">Week-end</span>
+          </div>
+        </div>
+        <div class="offre-salary">12€/h<span>~96€/jour</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="tech">
+        <div class="offre-logo">💻</div>
+        <div class="offre-info">
+          <h3>Développeur Web Junior</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">StartupX — Paris 2e (Remote possible)</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Tech & Web</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">15h/sem</span>
+          </div>
+        </div>
+        <div class="offre-salary">15€/h<span>~900€/mois</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="cours">
+        <div class="offre-logo">📚</div>
+        <div class="offre-info">
+          <h3>Tuteur / Tutrice scolaire</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Acadomia — Paris & banlieue</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Cours particuliers</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">Flexible</span>
+          </div>
+        </div>
+        <div class="offre-salary">18€/h<span>Horaires libres</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="restauration">
+        <div class="offre-logo">🍽️</div>
+        <div class="offre-info">
+          <h3>Serveur / Serveuse</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Brasserie Le Central — Lyon</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Restauration</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">Soirs & WE</span>
+          </div>
+        </div>
+        <div class="offre-salary">11.65€/h<span>+ pourboires</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="livraison">
+        <div class="offre-logo">🚴</div>
+        <div class="offre-info">
+          <h3>Livreur vélo (Uber Eats)</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Uber Eats — Toutes villes</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Livraison</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">Autonome</span>
+          </div>
+        </div>
+        <div class="offre-salary">13€/h<span>Statut auto-ent.</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="admin">
+        <div class="offre-logo">📋</div>
+        <div class="offre-info">
+          <h3>Assistant(e) Administratif</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Cabinet RH — Bordeaux</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Administration</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">20h/sem</span>
+          </div>
+        </div>
+        <div class="offre-salary">12.5€/h<span>~1000€/mois</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="tech">
+        <div class="offre-logo">📱</div>
+        <div class="offre-info">
+          <h3>Community Manager</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Mode & Co — Paris / Remote</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Tech & Web</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">Remote</span>
+          </div>
+        </div>
+        <div class="offre-salary">14€/h<span>10-15h/sem</span></div>
+      </div>
+
+      <div class="offre-card" data-secteur="commerce">
+        <div class="offre-logo">👗</div>
+        <div class="offre-info">
+          <h3>Vendeur / Vendeuse prêt-à-porter</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;">Zara — Paris / Lyon / Marseille</p>
+          <div class="offre-meta">
+            <span class="offre-tag">Commerce</span>
+            <span class="offre-tag green">Disponible</span>
+            <span class="offre-tag blue">Week-end</span>
+          </div>
+        </div>
+        <div class="offre-salary">11.88€/h<span>+ remise employé</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2025 JobEtudiant — Projet ESGIS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
