@@ -1,6 +1,6 @@
 # 🎓 JobEtudiant — Plateforme de Recrutement Jobs à Temps Partiel
 
-> Projet réalisé dans le cadre du cours **Configuration Git & GitHub** — ESGIS
+> Projet réalisé dans le cadre du cours **Configuration Git & GitHub** 
 
 ---
 
@@ -72,10 +72,10 @@ start index.html  # Windows
 
 | Membre | Fonctionnalité |
 |--------|---------------|
-| [Votre nom] | Page d'accueil + CSS global |
-| [Membre 2] | Page des offres + filtres |
-| [Membre 3] | Formulaire d'inscription |
-| [Membre 4] | Page employeurs + footer |
+| [RAYMONDO] | Page d'accueil + CSS global |
+| [JOANA] | Page des offres + filtres |
+| [MOK] | Formulaire d'inscription |
+| [MAFI] | Page employeurs + footer |
 
 ---
 
@@ -98,6 +98,6 @@ git push origin feature/ma-fonctionnalite
 
 ---
 
-## 📅 Projet ESGIS — 2025
+## 📅 Projet PRATIQUE
 
 *Cours : Configuration Git & GitHub*
